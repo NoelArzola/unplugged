@@ -107,6 +107,7 @@ html {
 }
 
 body {
+	color: #e1e2ea;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
 }
@@ -121,9 +122,14 @@ a {
     text-decoration: none;
 }
 
+h1 {
+	font-size: 2.25em;
+	font-family: 'Poppins', sans-serif;
+}
+
 h2 {
 	font-family: 'Poppins', sans-serif;
-	font-size: 3em;
+	font-size: 1.875em;
 }
 
 h3, 
@@ -131,12 +137,20 @@ h4 {
 	font-family: 'Poppins', sans-serif;
 }
 
-p {
+h3 {
 	font-size: 1.125em;
 }
 
-img {
+h4 {
+	font-size: 1.125;
+}
 
+p {
+	font-size: .875em;
+}
+
+img {
+	
 }
 
 figure {
@@ -155,6 +169,7 @@ address {
 /*------ Base Header - Footer Styles ------*/
 header,
 footer {
+  background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -223,14 +238,17 @@ footer .social-icons p {
 /* Hero Area */
 
 .hero-area {
+  /* background: url("../img/jake-melara-30679-unsplash.jpg") no-repeat; */
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  height: 100%;
 }
 
 /* Aside */
 
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,6 +258,7 @@ aside {
 /* Features */
 
 .features {
+  /* background: url("../img/rawpixel-800820-unsplash1.jpg") no-repeat; */
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -263,6 +282,7 @@ aside {
 /* Reviews */
 
 .reviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -276,6 +296,7 @@ aside {
    ========================================================================== */
 
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -283,6 +304,7 @@ aside {
 }
 
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -294,6 +316,7 @@ aside {
    ========================================================================== */
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -307,6 +330,34 @@ aside {
   flex-flow: row wrap;
 }
 
+/* ==========================================================================
+   Form styles
+   ========================================================================== */
+
+aside .form {
+	margin-top: 30px;
+  }
+  
+  input[type=text] {
+	box-sizing: border-box;
+	width: 100%;
+	color: #2a423a;
+	font-style: italic;
+  }
+  
+  input[type=button] {
+	width: 100%;
+	padding: 20px 0;
+	margin-top: 20px;
+	background-color: #2a423a;
+	font-family: 'Poppins', Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 1.125em;
+	color: #e2e3ed;
+	border: none;
+	text-align: center;
+	text-transform: uppercase;
+  }
 
 /* ==========================================================================
    Helper classes
@@ -400,7 +451,24 @@ aside {
     .content-wrapper {
         max-width: 640px;
         margin: 100px 0;
-    }
+	}
+	
+	h1 {
+		font-size: 3em;
+	}
+
+	h2 {
+		font-size: 2.25em;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+
+	h4 {
+		font-size: 1.5em;
+	}
+	
  
     /* Header */
  
@@ -415,7 +483,8 @@ aside {
  
     header nav {
         width: 20%;
-        justify-content: flex-end;
+		justify-content: flex-end;
+		font-size: 1em;
     }
  
     header nav ul {
@@ -529,7 +598,11 @@ aside {
      
         .faq h2 {
             width: 100%;
-        }
+		}
+		
+		.faq h4 {
+			font-size: .875em;
+		}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -538,9 +611,30 @@ aside {
     max-width: 960px;
     margin: 100px 0;
   }
+
+  h1 {
+	  font-size: 3.75em;
+  }
+
+  h2 {
+	  font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+	font-size: 1.875em;
+  }
+
+  p {
+	  font-size: 1.125em;
+  }
   
   header .content-wrapper {
     padding-left: 90px;
+  }
+
+  header nav {
+	  font-size: 1.125em;
   }
 
   aside .content-wrapper .form-description,
@@ -583,6 +677,10 @@ aside {
 
 .faq-items p {
 	width: 100%;
+}
+
+.faq h4 {
+	font-size: 1.125em;
 }
 
 /* ==========================================================================

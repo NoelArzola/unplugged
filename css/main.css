@@ -321,6 +321,23 @@ aside {
   flex-flow: row wrap;
 }
 
+.map figure {
+	height: 0;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 75%;
+	width: 100%;
+}
+
+.map iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+
+}
+
 .contact-section {
   background-color: #2a423a;
   display: flex;

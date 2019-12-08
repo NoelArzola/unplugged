@@ -97,8 +97,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* font-family: 'Poppins', sans-serif;
-   font-family: 'Open Sans', sans-serif;*/
 
    /* General Styles */
 
@@ -125,16 +123,19 @@ a {
 h1 {
 	font-size: 2.25em;
 	font-family: 'Poppins', sans-serif;
+	font-weight: normal;
 }
 
 h2 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.875em;
+	font-weight: normal;
 }
 
 h3, 
 h4 {
 	font-family: 'Poppins', sans-serif;
+	font-weight: normal;
 }
 
 h3 {
@@ -150,21 +151,20 @@ p {
 }
 
 img {
-	
+	width: 100%;
 }
 
 figure {
-
+	margin: 0;
 }
 
 address {
 	font-style: normal;
 }
 
-.content-wrapper {
+/*.content-wrapper {
 
-}
-
+} */
 
 /*------ Base Header - Footer Styles ------*/
 header,
@@ -192,6 +192,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+	width: 62%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
 }
 
 .header-divider {
@@ -238,7 +246,8 @@ footer .social-icons p {
 /* Hero Area */
 
 .hero-area {
-  /* background: url("../img/jake-melara-30679-unsplash.jpg") no-repeat; */
+  background: url("../img/jake-melara-30679-unsplash.jpg") center no-repeat #333;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -258,7 +267,8 @@ aside {
 /* Features */
 
 .features {
-  /* background: url("../img/rawpixel-800820-unsplash1.jpg") no-repeat; */
+  background: url("../img/rawpixel-800820-unsplash1.jpg") center no-repeat #333;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -286,6 +296,14 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.reviews figure {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
 }
 
 .reviews h3 {
@@ -479,7 +497,11 @@ aside .form {
     header .content-wrapper {
         width: 100%;
         justify-content: space-between;
-    }
+	}
+	
+	header figure {
+		width: 29%;
+	}
  
     header nav {
         width: 20%;
@@ -526,7 +548,11 @@ aside .form {
         width: 40%;
     }
  
-    /* Reviews */
+	/* Reviews */
+	
+	.reviews figure {
+		width: 49%;
+	}
     .reviews article {
       display: flex;
       justify-content: flex-end;
@@ -633,6 +659,10 @@ aside .form {
     padding-left: 90px;
   }
 
+  header figure {
+	  width: 24%;
+  }
+
   header nav {
 	  font-size: 1.125em;
   }
@@ -655,6 +685,10 @@ aside .form {
     display: flex;
     justify-content: center;
     justify-items: space-around;
+  }
+
+  .reviews figure {
+	  width: 38%;
   }
 
 }

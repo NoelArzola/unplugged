@@ -212,6 +212,8 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 header nav ul {
@@ -335,7 +337,6 @@ aside {
 	left: 0;
 	height: 100%;
 	width: 100%;
-
 }
 
 .contact-section {
@@ -482,7 +483,9 @@ aside .form {
 ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-    /* General styles */
+	
+	/* General styles */
+
     .content-wrapper {
         max-width: 640px;
         margin: 100px 0;
@@ -616,7 +619,11 @@ aside .form {
  
     .mission-content p {
         width: 39%;
-    }
+	}
+	
+	.map figure {
+		padding-bottom: 46%;
+	}
  
     .contact-section .content-wrapper h2 {
         width: 66%;
@@ -708,14 +715,16 @@ aside .form {
 	  width: 38%;
   }
 
-}
-
 /* ==========================================================================
    About Page
    ========================================================================== */
    .mission-content p {
 	width: 36%;
 	}
+
+	.map figure {
+		padding-bottom: 38%;
+	} 
 
 
 /* ==========================================================================
@@ -732,6 +741,8 @@ aside .form {
 
 .faq h4 {
 	font-size: 1.125em;
+}
+
 }
 
 /* ==========================================================================

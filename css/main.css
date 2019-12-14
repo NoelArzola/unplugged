@@ -220,6 +220,7 @@ header nav ul li {
 
 footer {
   text-align: center;
+  flex-direction: column;
 }
 
 footer .content-wrapper {
